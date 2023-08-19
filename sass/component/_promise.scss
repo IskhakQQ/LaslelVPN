@@ -1,0 +1,35 @@
+.promise {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 95.83px;
+  &__img {
+    width: 508.12px;
+    height: 414.715px;
+  }
+  &__wrapper{
+    &:last-child{
+        margin-left: 169.48px;
+    }
+  }
+  &__title {
+    width: 383.406px;
+    margin-top: 45px;
+    color: $text-black-color;
+    font-family: $text-font-family;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+  }
+  &__desc {
+    margin-top: 20px;
+    color: $text-gray-color;
+    font-family: $text-font-family;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    width: 427.879px;
+  }
+  
+}

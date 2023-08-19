@@ -1,0 +1,25 @@
+@import "./var";
+
+@import "./mixin/button";
+@import "./mixin/link";
+
+@import "./component/header";
+@import "./component/hero";
+@import "./component/non";
+@import "./component/promise";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+
+a{
+    text-decoration: none;
+}

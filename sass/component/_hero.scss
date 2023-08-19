@@ -1,0 +1,56 @@
+
+
+.hero {
+  display: flex;
+  margin-top: 117px;
+  &__title {
+    color: $text-black-color;
+    font-family: $text-font-family;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 70px;
+    width: 555px;
+  }
+  &__link {
+    color: $text-black-color;
+    font-family: $text-font-family;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+  }
+  &__desc {
+    margin-top: 20px;
+    color: #4f5665;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    width: 555px;
+  }
+  &__link-two {
+    @include link;
+    color: $text-black-color;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  &__btn {
+    margin-top: 50px;
+    @include button;
+    border-radius: 10px;
+    padding: auto 77px;
+    width: 250px;
+    height: 60px;
+  }
+  &__wrapper{
+    &:last-child{
+        position: relative;
+    }
+  }
+  &__pic {
+    position: absolute;
+    left: 100px; 
+  }
+}

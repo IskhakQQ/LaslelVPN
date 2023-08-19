@@ -1,0 +1,14 @@
+@mixin link{
+  color: $text-gray-color;
+  font-family: $text-font-family;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: #0b132a;
+    transition: all 0.2s ease;
+  }
+}

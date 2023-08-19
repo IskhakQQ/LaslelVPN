@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  margin-top: 50px;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    width: 149px;
+    height: 36px;
+  }
+
+  &__link {
+    @include link;
+    margin-left: 40px;
+    &:first-child {
+        margin-left: 157px !important;
+      }
+  }
+  &__link-two {
+    margin-left: 150px;
+    color: $text-black-color;
+    font-family: $text-font-family;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  &__btn {
+    @include button;
+    margin-left: 30px;
+  }
+}
