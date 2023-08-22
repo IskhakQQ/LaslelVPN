@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-between;
   margin-top: 95.83px;
-  &__img {
+  &__pic {
     width: 508.12px;
     height: 414.715px;
   }
-  &__wrapper{
-    &:last-child{
-        margin-left: 169.48px;
+  &__wrapper {
+    &:last-child {
+      margin-left: 169.48px;
     }
   }
   &__title {
@@ -31,5 +31,25 @@
     line-height: 30px;
     width: 427.879px;
   }
-  
+  &__img {
+    width: 24px;
+    height: 24px;
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    &:first-child {
+      margin: 23px auto;
+    }
+  }
+  &__sub {
+    margin-left: 10.08px;
+    color: $text-gray-color;
+    font-family: $text-font-family;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
 }

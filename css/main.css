@@ -39,10 +39,11 @@
   line-height: normal;
 }
 .header__btn {
+  border-radius: 50px;
+  height: 45px;
+  width: 150px;
   color: #F53838;
-  padding: 0.8em 1.75em;
   background-color: transparent;
-  border-radius: 6px;
   border: 0.3px solid #F53838;
   transition: 0.5s;
   position: relative;
@@ -138,9 +139,7 @@
 .hero__btn {
   margin-top: 50px;
   color: #F53838;
-  padding: 0.8em 1.75em;
   background-color: transparent;
-  border-radius: 6px;
   border: 0.3px solid #F53838;
   transition: 0.5s;
   position: relative;
@@ -264,7 +263,7 @@
   justify-content: space-between;
   margin-top: 95.83px;
 }
-.promise__img {
+.promise__pic {
   width: 508.12px;
   height: 414.715px;
 }
@@ -290,6 +289,185 @@
   font-weight: 400;
   line-height: 30px;
   width: 427.879px;
+}
+.promise__img {
+  width: 24px;
+  height: 24px;
+}
+.promise__block {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.promise__block:first-child {
+  margin: 23px auto;
+}
+.promise__sub {
+  margin-left: 10.08px;
+  color: #4F5665;
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+#plan {
+  margin-top: 126px;
+  padding-top: 80px;
+  background: linear-gradient(180deg, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%);
+}
+
+.plan {
+  display: flex;
+  justify-content: center;
+}
+.plan__title {
+  position: relative;
+  color: #0B132A;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px;
+}
+.plan__jh {
+  display: flex;
+  justify-content: center;
+}
+.plan__desc {
+  margin-top: 20px;
+  width: 555px;
+  color: #4F5665;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.plan__blocks {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+}
+.plan__blocker {
+  position: absolute;
+  margin-left: 76.06px;
+  bottom: 50px;
+}
+.plan__block {
+  border-radius: 10px;
+  padding-top: 80px;
+  text-align: center;
+  background: #ffffff;
+  border: 2px solid #DDD;
+  width: 330px;
+  height: 760px;
+}
+.plan__img {
+  width: 144.904px;
+  height: 165.374px;
+}
+.plan__sub {
+  color: #0B132A;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  margin-top: 30px;
+}
+.plan__desc-two {
+  text-align: start;
+  color: #4F5665;
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  position: relative;
+  left: 100px;
+  margin-top: 10px;
+}
+.plan__desc-two::before {
+  position: absolute;
+  top: 3px;
+  left: -30px;
+  content: "";
+  background: url(../../img/tick.svg) no-repeat center/cover;
+  width: 24px;
+  height: 24px;
+}
+.plan__desc-two:first-child {
+  margin-top: 30px;
+}
+.plan__sub-two {
+  margin-top: 130px;
+  color: #0B132A;
+  font-family: Rubik;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.plan__sub-two:nth-child(3) {
+  margin: auto;
+}
+.plan__btn {
+  margin-top: 20px;
+  color: #F53838;
+  background-color: transparent;
+  border: 0.3px solid #F53838;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 19px;
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  color: #F53838;
+  padding: auto;
+  width: 177.876px;
+  height: 45px;
+  border-radius: 50px;
+  border: 2px solid #f53838;
+}
+.plan__btn::after, .plan__btn::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: 0.5s ease-out;
+  background-color: #F53838;
+}
+.plan__btn::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+.plan__btn:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+.plan__btn:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+.plan__btn:hover {
+  color: #ffffff;
+}
+.plan__btn:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
 }
 
 * {
