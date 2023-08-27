@@ -1,12 +1,14 @@
-.slider {
-  margin-top: 124.16px;
+#slider {
 
+}
+.slider {
+  margin-bottom: 300px;
+  margin-top: 124.16px;
   &__wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center !important;
+    align-items: center;
   }
-
   &__title {
     width: 447.805px;
     color: $text-black-color;
@@ -18,7 +20,6 @@
     line-height: 50px;
   }
   &__desc {
-    margin-top: 20px;
     width: 555px;
     color: $text-gray-color;
     text-align: center;
@@ -28,42 +29,138 @@
     font-weight: 400;
     line-height: 30px;
   }
-  &__title-two {
-    color: $text-black-color;
-    text-align: center;
-    font-family: $text-font-family;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 30px;
+
+  &__cards {
+    margin-top: 60px;
+    display: flex;
+    max-width: 1440px;
   }
 
-  &__desc-two {
-    color: $text-gray-color;
-    text-align: center;
-    font-family: $text-font-family;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-  }
+  &__card {
+    cursor: pointer;
+    margin-right: 50px;
+    border-radius: 10px;
+    padding: 30px;
+    border: 2px solid $border-gray-color;
+    width: 420px !important;
+    height: 260px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  &__sub {
-    color: $text-black-color;
-    font-family: $text-font-family;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    width: 340px;
-  }
+    &:hover {
+      border: 2px solid $text-red-color;
+      transition: all 0.2s ease;
+    }
 
+    &__title {
+      color: $text-black-color;
+      font-family: $text-font-family;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px;
+      width: 142.022px;
+    }
+    &__desc {
+      margin-top: 5px;
+      color: $text-gray-color;
+      font-family: $text-font-family;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+    }
+    &__grade {
+      display: flex;
+      margin-left: 108px;
+      color: $text-black-color;
+      font-family: $text-font-family;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+    }
+    &__img {
+      margin-left: 10px;
+    }
+    &__comment {
+      margin-top: 20px;
+      color: $text-black-color;
+      font-family: $text-font-family;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      width: 340px;
+    }
+  }
   &__blocks {
-    width: 340px;
-
+    display: flex;
+    align-items: center;
   }
   &__block {
     margin-left: 20px;
-    display: flex;
   }
+}
+.slick__list {
+  left: -150px;
+}
+li {
+  list-style-type: none;
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: -120px;
+}
+.slick-dots li {
+  margin: 5px 10px;
+}
+
+.slick-dots li button {
+  background: #3d3b7f38;
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.slick-dots .slick-active button {
+  background: $text-red-color;
+  font-size: 0;
+  width: 40px;
+  height: 10px;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+.slick-next {
+  text-align: center;
+  background: url(../img/next.svg) no-repeat center/50px;
+  position: absolute;
+  border: none;
+  background-color: $text-red-color;
+  border-radius: 50%;
+  right: 0;
+  bottom: -60%;
+  font-size: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.slick-prev {
+  background: url(../img/arrow.svg) no-repeat center/50px;
+  color: $text-red-color;
+  border: solid 2px $button-backgraund-color;
+  border-radius: 50%;
+  position: absolute;
+  right: 80px;
+  bottom: -60%;
+  font-size: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
